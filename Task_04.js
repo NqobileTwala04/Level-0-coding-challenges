@@ -1,4 +1,11 @@
-function areaOfTriangle(base, height1, height2) {
-    return (base * height1 / height2)
+function evenOrOdd(integer){
+    if(integer % 2 == 0)
+    {
+        console.log("Even");
+    }
+    else
+    {
+        console.log("Odd");
+    }
 }
-console.log(areaOfTriangle(7,4,2));
+evenOrOdd(2)

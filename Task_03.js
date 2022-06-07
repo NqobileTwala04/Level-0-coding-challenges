@@ -1,11 +1,4 @@
-function evenOrOdd(integer){
-    if(integer % 2 == 0)
-    {
-        console.log("Even");
-    }
-    else
-    {
-        console.log("Odd");
-    }
+function hello(name) {
+    console.log("Hello " + name) 
 }
-evenOrOdd(2)
+hello("Tshepo")

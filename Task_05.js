@@ -1,4 +1,4 @@
-function maxNum(Num1, Num2, Num3, Num4) {
-    console.log(Math.max(Num1, Num2, Num3, Num4));
+function areaOfTriangle(base, height1, height2) {
+    return (base * height1 / height2)
 }
-maxNum(7,90,45,3);
+console.log(areaOfTriangle(7,4,2));
