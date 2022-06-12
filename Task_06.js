@@ -1,4 +1,4 @@
-function maxNum(Num1, Num2, Num3, Num4) {
-    console.log(Math.max(Num1, Num2, Num3, Num4));
+function maxNum(Number1, Number2, Number3) {
+    return (Math.max(Number1, Number2, Number3));
 }
-maxNum(7,90,45,3);
+console.log(maxNum(7,90,45));
