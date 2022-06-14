@@ -4,7 +4,7 @@ function convertTime(n) {
     let rhours = Math.floor(hours);
     let minutes = (hours - rhours) * 60;
     let rminutes = Math.round(minutes);
-    return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+    return num + " minutes = " + rhours + " hour and " + rminutes + " minutes.";
     }
     
 console.log(convertTime(60));
