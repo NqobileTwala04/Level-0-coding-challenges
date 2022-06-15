@@ -1,22 +1,24 @@
-function printVowels(string){
-    let vowels =[]
-    string= string.toLowerCase();  
-
-    for (letter of string){
-        if (letter==="a"|| letter =="e" || letter == "i"|| letter == "o" || letter== "u"){ 
-            vowels.push(letter);
+function commonCharacters(A) {
+    const [first, ...rest] = A.sort((a,b) => -(a.length - b.length));
+    const duplicates = [];
+    [...first].forEach(e => {
+      let isDuplicate = true;
+      for (let x = 0, len = rest.length; x < len; x++) {
+        let letters = rest[x];
+        const i = letters.search(e);
+        if (i !== -1) {
+          letters = letters.slice(0, i) + letters.slice(i + 1);
+          rest[x] = letters;
+        } else {
+          isDuplicate = false;
         }
-
-    for (let i = 0; i < vowels.length; i++ ){
-        for (let j = 0; j < vowels.length; j++){
-            if (i !== j){
-                if (vowels[i]=== vowels[j]){
-                    vowels.splice(j,1);
-                }
-            }
-        }
-    }
-    }
-    console.log("Vowels: "+vowels) ;
-}
-printVowels("NqobileTwala");
+      }
+      if (isDuplicate) {
+        duplicates.push(e);
+      }
+    });
+    return duplicates;
+  }
+  
+  const arr = ["Nqobile", "Bongiwe"];
+  console.log(commonCharacters(arr));
