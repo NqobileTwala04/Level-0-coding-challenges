@@ -1,8 +1,5 @@
-function areaTriangle([a,b,c]) {
-    [a,b,c] = [a, b, c].map(Number);
-    let sp = (a + b + c) / 2;
-    let area = Math.sqrt(sp * (sp - a) * (sp - b) * (sp - c));
+function areaTriangle(side1, side2, side3) {
+    const semiPerimeter = ( side1 + side2 + side3) / 2;
+    const area = Math.sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
     return area;
 }
- 
-console.log(areaTriangle(["2", "3.5", "4"]));

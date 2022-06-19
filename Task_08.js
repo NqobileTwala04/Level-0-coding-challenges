@@ -1,10 +1,9 @@
-function convertTime(n) {
-    let num = n;
-    let hours = (num / 60);
-    let rhours = Math.floor(hours);
-    let minutes = (hours - rhours) * 60;
-    let rminutes = Math.round(minutes);
-    return num + " minutes = " + rhours + " hour and " + rminutes + " minutes.";
-    }
-    
-console.log(convertTime(60));
+function convertTime(seconds) {
+    const hours = Math.floor(seconds / 60);
+    const minutes = Math.floor(seconds % 60);
+  
+    const hoursDisplay = hours > 0 ? hours + (hours == 1 ? " hour, " : " hours, ") : "";
+    const minutesDisplay = minutes > 0 ? minutes + (minutes == 1 ? " minute " : " minutes ") : "";
+    return hoursDisplay + minutesDisplay;
+  }
+  console.log(convertTime(133))

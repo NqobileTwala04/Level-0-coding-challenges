@@ -1,5 +1,10 @@
-function maxNum(Number1, Number2, Number3) {
-    let output = Math.max(Number1, Number2, Number3);
-    return output
+function findMaximumNumber(number1, number2, number3) {
+    if ( number1 >= number2 && number1 >= number3) {
+        return number1;
+    } else if (number2 >= number1 && number2 >= number3) {
+        return number2;
+    } else {
+        return number3;
+    }
 }
-console.log(maxNum(7,90,45));
+console.log(findMaximumNumber(7,90,45));

@@ -1,17 +1,13 @@
 function temperatureInCelsius(celsius) 
 {
-  let cTemp = celsius;
-  let cToFahr = cTemp * 9 / 5 + 32;
-  let message = cToFahr + ' \xB0F.';
-    return(message);
+  const fahrenheit = celsius * 9 / 5 + 32;
+    return(fahrenheit);
 }
 
 function temperatureInFahrenheit(fahrenheit) 
 {
-  let fTemp = fahrenheit;
-  let fToCel = (fTemp - 32) * 5 / 9;
-  let message = fToCel + '\xB0C.';
-    return(message);
+  const celsius = (fahrenheit - 32) * 5 / 9;
+    return(celsius);
 } 
 
 console.log(temperatureInCelsius(60));
