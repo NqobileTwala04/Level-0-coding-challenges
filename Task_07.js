@@ -6,6 +6,6 @@ function convertCelsiusToFahrenheit(celsius)
 
 function convertFahrenheitToCelsius(fahrenheit) 
 {
-  const celsius = Math.round(fahrenheit - 32 * 5 / 9);
+  const celsius = Math.round(fahrenheit - 32) * 5 / 9;
     return(celsius);
 } 
