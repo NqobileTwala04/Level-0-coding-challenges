@@ -1,10 +1,9 @@
-function findMaximumNumber(number1, number2, number3) {
-    if ( number1 >= number2 && number1 >= number3) {
-        return number1;
-    } else if (number2 >= number1 && number2 >= number3) {
-        return number2;
-    } else {
-        return number3;
+function findMaximumNumber() {
+    let maxNumber = -Infinity
+    for ( let i = 0; i < arguments.length; i++) {
+        if ( arguments[i] >= maxNumber) {
+            maxNumber = arguments[i]
+        }
     }
+    return maxNumber
 }
-console.log(findMaximumNumber(7,90,45));

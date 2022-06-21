@@ -6,4 +6,4 @@ function convertTime(seconds) {
     const minutesDisplay = minutes > 0 ? minutes + (minutes == 1 ? " minute " : " minutes ") : "";
     return hoursDisplay + minutesDisplay;
   }
-  console.log(convertTime(133))
+ 

@@ -10,7 +10,7 @@ function findCommonCharacters(firstString, secondString) {
         object.splice(idx, 1); 
       } 
     } 
-    return commonCharacters; 
+    console.log("Common letters: " + commonCharacters.join(", ")); 
   } 
    
-  console.log(findCommonCharacters("consequence", "frequently")); 
+findCommonCharacters("consequence", "frequently"); 
