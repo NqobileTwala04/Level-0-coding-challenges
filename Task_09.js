@@ -3,11 +3,14 @@ function findVowels(str) {
   const strVowels = [];
 
   for (let i = 0; i < vowels.length; i++) {
-    if (str.toLowerCase().includes(vowels[i])) {
-      strVowels.push(vowels[i]);
-    }
+  if (str.toLowerCase().includes(vowels[i])) {
+    strVowels.push(str[i]);
+  }
+     
+    
   }
   console.log("Vowels: " + strVowels.join(', '));
 }
 
-findVowels("NQOBILE");
+findVowels("Umuzi");
+ 
