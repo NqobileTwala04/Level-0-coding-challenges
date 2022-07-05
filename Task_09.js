@@ -14,5 +14,3 @@ function findVowels(str) {
 }
 
 findVowels("Jericho");
-
-//str.toLowerCase()
