@@ -2,15 +2,17 @@ function findVowels(str) {
   const vowels = ["a", "e", "i", "o", "u"];
   const strVowels = [];
 
-  for (let i = 0; i < vowels.length; i++) {
-  if (str.toLowerCase().includes(vowels[i])) {
+  for (let i = 0; i < str.length; i++) { 
+  if (vowels.includes(str[i].toLowerCase())) {
     strVowels.push(str[i]);
   }
      
     
-  }
+  } 
   console.log("Vowels: " + strVowels.join(', '));
+   
 }
 
-findVowels("Umuzi");
- 
+findVowels("Jericho");
+
+//str.toLowerCase()
