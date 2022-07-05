@@ -9,8 +9,8 @@ function findVowels(str) {
      
     
   } 
-  console.log("Vowels: " + strVowels.join(', '));
+  console.log("Vowels: " + [...new Set(strVowels)].join(", "));
    
 }
 
-findVowels("Jericho");
+findVowels("maeiouoo");
