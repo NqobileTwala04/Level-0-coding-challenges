@@ -4,12 +4,12 @@ function findVowels(str) {
 
   for (let i = 0; i < str.length; i++) { 
   if (vowels.includes(str[i])) {
-    strVowels.push(str[i]);
+    strVowels.push(str[i].toLowerCase());
   }
      
     
   } 
-  console.log("Vowels: " + [...new Set(strVowels)].join(", ").toLowerCase());
+  console.log("Vowels: " + [...new Set(strVowels)].join(", "));
    
 }
 
